@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42255287-c04a-4633-bfef-214884b282ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Ncel_processmaker_UI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Ncel_processmaker_UI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/common_2/user-panel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back-template/demo2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/back-template/demo2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/login-master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/login-master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/common_2/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/common_2/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controller/common.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controller/common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/draft.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/draft.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/loginController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +133,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1nKklozD1wqu9mhmOHunrSChPwq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,6 +166,8 @@
       <workItem from="1611206050502" duration="79000" />
       <workItem from="1611206989580" duration="4357000" />
       <workItem from="1611212606904" duration="3088000" />
+      <workItem from="1611223269890" duration="1349000" />
+      <workItem from="1611225945510" duration="1434000" />
     </task>
     <servers />
   </component>
@@ -178,5 +183,9 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1611212609735" />
+    <state x="0" y="0" width="585" height="738" key="find.popup" timestamp="1611226355202">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="0" y="0" width="585" height="738" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1611226355202" />
   </component>
 </project>

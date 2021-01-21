@@ -215,7 +215,7 @@
 											<div class="navi navi-hover navi-active navi-link-rounded navi-bold navi-icon-center navi-light-icon">
 												<!--begin::Item-->
 												<div class="navi-item my-2">
-													<a href="#" class="navi-link active">
+													<a href="index" class="navi-link active">
 														<span class="navi-icon mr-4">
 															<span class="svg-icon svg-icon-lg">
 																<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Mail-heart.svg-->
@@ -236,29 +236,10 @@
 													</a>
 												</div>
 												<!--end::Item-->
+
 												<!--begin::Item-->
 												<div class="navi-item my-2">
-													<a href="#" class="navi-link">
-														<span class="navi-icon mr-4">
-															<span class="svg-icon svg-icon-lg">
-																<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/General/Half-star.svg-->
-																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-																	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																		<polygon points="0 0 24 0 24 24 0 24"></polygon>
-																		<path d="M12,4.25932872 C12.1488635,4.25921584 12.3000368,4.29247316 12.4425657,4.36281539 C12.6397783,4.46014562 12.7994058,4.61977315 12.8967361,4.81698575 L14.9389263,8.95491503 L19.5054023,9.61846284 C20.0519472,9.69788046 20.4306287,10.2053233 20.351211,10.7518682 C20.3195865,10.9695052 20.2170993,11.1706476 20.0596157,11.3241562 L16.7552826,14.545085 L17.5353298,19.0931094 C17.6286908,19.6374458 17.263103,20.1544017 16.7187666,20.2477627 C16.5020089,20.2849396 16.2790408,20.2496249 16.0843804,20.1472858 L12,18 L12,4.25932872 Z" fill="#000000" opacity="0.3"></path>
-																		<path d="M12,4.25932872 L12,18 L7.91561963,20.1472858 C7.42677504,20.4042866 6.82214789,20.2163401 6.56514708,19.7274955 C6.46280801,19.5328351 6.42749334,19.309867 6.46467018,19.0931094 L7.24471742,14.545085 L3.94038429,11.3241562 C3.54490071,10.938655 3.5368084,10.3055417 3.92230962,9.91005817 C4.07581822,9.75257453 4.27696063,9.65008735 4.49459766,9.61846284 L9.06107374,8.95491503 L11.1032639,4.81698575 C11.277344,4.464261 11.6315987,4.25960807 12,4.25932872 Z" fill="#000000"></path>
-																	</g>
-																</svg>
-																<!--end::Svg Icon-->
-															</span>
-														</span>
-														<span class="navi-text font-weight-bolder font-size-lg">Marked</span>
-													</a>
-												</div>
-												<!--end::Item-->
-												<!--begin::Item-->
-												<div class="navi-item my-2">
-													<a href="#" class="navi-link">
+													<a href="draft" class="navi-link">
 														<span class="navi-icon mr-4">
 															<span class="svg-icon svg-icon-lg">
 																<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Design/PenAndRuller.svg-->
@@ -274,7 +255,7 @@
 														</span>
 														<span class="navi-text font-weight-bolder font-size-lg">Draft</span>
 														<span class="navi-label">
-															<span class="label label-rounded label-light-warning font-weight-bolder">5</span>
+															<span class="label label-rounded label-light-warning font-weight-bolder"><?=count($draft->cases)?></span>
 														</span>
 													</a>
 												</div>
@@ -374,7 +355,7 @@
 																	foreach ($inbox->cases as $key => $d) {
 																?>
 																	<tr>
-																		<td><a href="http://cicd.server247.info:58080/sysworkflow/en/neoclassic/cases/opencase/<?=$d->app_uid?>"><?=$d->app_number?></a></td>
+																		<td><a href="http://localhost:81/sysworkflow/en/neoclassic/cases/opencase/<?=$d->app_uid?>"><?=$d->app_number?></a></td>
 																		<td><?=$d->app_title?></td>
 																		<td><?=$d->app_pro_title?></td>
 																		<td><?=$d->app_tas_title?></td>
@@ -428,55 +409,7 @@
 
 
 	<!-- begin::User Panel-->
-	<div id="kt_quick_user" class="offcanvas offcanvas-right p-10">
-		<!--begin::Header-->
-		<div class="offcanvas-header d-flex align-items-center justify-content-between pb-5">
-			<h3 class="font-weight-bold m-0">User Profile 
-			<small class="text-muted font-size-sm ml-2">12 messages</small></h3>
-			<a href="#" class="btn btn-xs btn-icon btn-light btn-hover-primary" id="kt_quick_user_close">
-				<i class="ki ki-close icon-xs text-muted"></i>
-			</a>
-		</div>
-		<!--end::Header-->
-		<!--begin::Content-->
-		<div class="offcanvas-content pr-5 mr-n5">
-			<!--begin::Header-->
-			<div class="d-flex align-items-center mt-5">
-				<div class="symbol symbol-100 mr-5">
-					<div class="symbol-label" style="background-image:url('../theme/html/demo2/dist/assets/media/users/300_21.jpg')"></div>
-					<i class="symbol-badge bg-success"></i>
-				</div>
-				<div class="d-flex flex-column">
-					<a href="#" class="font-weight-bold font-size-h5 text-dark-75 text-hover-primary">James Jones</a>
-					<div class="text-muted mt-1">Application Developer</div>
-					<div class="navi mt-2">
-						<a href="#" class="navi-item">
-							<span class="navi-link p-0 pb-2">
-								<span class="navi-icon mr-1">
-									<span class="svg-icon svg-icon-lg svg-icon-primary">
-										<!--begin::Svg Icon | path:/metronic/theme/html/demo2/dist/assets/media/svg/icons/Communication/Mail-notification.svg-->
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-											<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-												<rect x="0" y="0" width="24" height="24" />
-												<path d="M21,12.0829584 C20.6747915,12.0283988 20.3407122,12 20,12 C16.6862915,12 14,14.6862915 14,18 C14,18.3407122 14.0283988,18.6747915 14.0829584,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,8 C3,6.8954305 3.8954305,6 5,6 L19,6 C20.1045695,6 21,6.8954305 21,8 L21,12.0829584 Z M18.1444251,7.83964668 L12,11.1481833 L5.85557487,7.83964668 C5.4908718,7.6432681 5.03602525,7.77972206 4.83964668,8.14442513 C4.6432681,8.5091282 4.77972206,8.96397475 5.14442513,9.16035332 L11.6444251,12.6603533 C11.8664074,12.7798822 12.1335926,12.7798822 12.3555749,12.6603533 L18.8555749,9.16035332 C19.2202779,8.96397475 19.3567319,8.5091282 19.1603533,8.14442513 C18.9639747,7.77972206 18.5091282,7.6432681 18.1444251,7.83964668 Z" fill="#000000" />
-												<circle fill="#000000" opacity="0.3" cx="19.5" cy="17.5" r="2.5" />
-											</g>
-										</svg>
-										<!--end::Svg Icon-->
-									</span>
-								</span>
-								<span class="navi-text text-muted text-hover-primary">jm@softplus.com</span>
-							</span>
-						</a>
-						<a href="#" class="btn btn-sm btn-light-primary font-weight-bolder py-2 px-5">Sign Out</a>
-					</div>
-				</div>
-			</div>
-			<!--end::Header-->
-	
-		</div>
-		<!--end::Content-->
-	</div>
+    <?php include 'common_2/user-panel.php' ?>
 	<!-- end::User Panel-->
 
 

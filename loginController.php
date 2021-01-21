@@ -8,9 +8,9 @@ if (isset($_REQUEST['username']) and isset($_REQUEST['password'])) {
 	
 	$username 		= $_REQUEST['username'];
 	$password 		= $_REQUEST['password'];
-	$clientId 		= 'FCGYPZDFJRQNUDVXZICJUPZRYXDYGERM';
-	$clientSecret 	= '2624135536009523daa6907012006296';
-	$pmServer    	= 'http://cicd.server247.info:58080';
+	$clientId 		= 'FAOGYSVMBQAPCQTYBPPIPYENPWAPMDVY';
+	$clientSecret 	= '26701961160092905481679066768251';
+	$pmServer    	= 'http://localhost:81';
 	$pmWorkspace 	= 'workflow';
 
 	//set username using session
