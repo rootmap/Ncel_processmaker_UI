@@ -41,6 +41,9 @@ if (!empty($_SESSION["access_token"])) {
                     <h4 class="font-18 mt-3 m-b-5">Welcome to NCEL </h4>
                     <p class="text-muted">Please enter your credentials below</p>
                 </div>
+                <a href="index.html" class="logo-admin">
+                    <img width="25%" src="backend/assets/images/ncell.png" alt="logo">
+                </a>
             </div>
             <div class="p-3">
                 <form class="form-horizontal m-t-10" action="loginController.php" method="post">

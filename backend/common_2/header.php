@@ -6,8 +6,9 @@
 			<!--begin::Header Logo-->
 			<div class="header-logo">
 				<a href="index.html">
-					<img alt="Logo" src="assets/theme/html/demo2/dist/assets/media/logos/logo-letter-9.png" class="logo-default max-h-40px" />
-					<img alt="Logo" src="assets/theme/html/demo2/dist/assets/media/logos/logo-letter-1.png" class="logo-sticky max-h-40px" />
+					<img alt="Logo" src="assets/images/ncell-white.jpg" class="logo-default max-h-40px" />
+					<img alt="Logo" src="assets/images/ncell-white.jpg" class="logo-sticky max-h-40px" />
+					<!-- <img width="25%" src="backend/assets/images/ncell.png" alt="logo"> -->
 				</a>
 			</div>
 			<!--end::Header Logo-->
