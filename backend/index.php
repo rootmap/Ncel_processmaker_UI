@@ -374,7 +374,7 @@
 																	foreach ($inbox->cases as $key => $d) {
 																?>
 																	<tr>
-																		<td><a href="<?=$d->app_uid?>"><?=$d->app_number?></a></td>
+																		<td><a href="http://cicd.server247.info:58080/sysworkflow/en/neoclassic/cases/opencase/<?=$d->app_uid?>"><?=$d->app_number?></a></td>
 																		<td><?=$d->app_title?></td>
 																		<td><?=$d->app_pro_title?></td>
 																		<td><?=$d->app_tas_title?></td>

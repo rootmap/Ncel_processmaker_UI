@@ -7,7 +7,7 @@
         function getCaseInfo($url){
 
             // get all case using this url
-            $getCase = curl_init("http://localhost:81/api/1.0/workflow/".$url);
+            $getCase = curl_init("http://cicd.server247.info:58080/api/1.0/workflow/".$url);
             curl_setopt($getCase, CURLOPT_HTTPHEADER, array("Authorization: Bearer " . $_SESSION["access_token"]));
             curl_setopt($getCase, CURLOPT_RETURNTRANSFER, true);
             $data['cases'] = json_decode(curl_exec($getCase));
@@ -24,7 +24,7 @@
         function getDynaformInfo($url){
 
             // get all case using this url
-            $getCase = curl_init("http://localhost:81/api/1.0/workflow/project/".$url);
+            $getCase = curl_init("http://cicd.server247.info:58080/api/1.0/workflow/project/".$url);
             curl_setopt($getCase, CURLOPT_HTTPHEADER, array("Authorization: Bearer " . $_SESSION["access_token"]));
             curl_setopt($getCase, CURLOPT_RETURNTRANSFER, true);
             $data['cases'] = json_decode(curl_exec($getCase));
@@ -73,7 +73,7 @@
                 /*print_r($aVars);
                 die();*/
                
-                $ch = curl_init("http://localhost:81/api/1.0/workflow/cases");
+                $ch = curl_init("http://cicd.server247.info:58080/api/1.0/workflow/cases");
                 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Authorization: Bearer " . $_SESSION["access_token"]));
                 curl_setopt($ch, CURLOPT_TIMEOUT, 30);
                 curl_setopt($ch, CURLOPT_POST, 1);

@@ -8,9 +8,9 @@ if (isset($_REQUEST['username']) and isset($_REQUEST['password'])) {
 	
 	$username 		= $_REQUEST['username'];
 	$password 		= $_REQUEST['password'];
-	$clientId 		= 'FAOGYSVMBQAPCQTYBPPIPYENPWAPMDVY';
-	$clientSecret 	= '26701961160092905481679066768251';
-	$pmServer    	= 'http://localhost:81';
+	$clientId 		= 'FCGYPZDFJRQNUDVXZICJUPZRYXDYGERM';
+	$clientSecret 	= '2624135536009523daa6907012006296';
+	$pmServer    	= 'http://cicd.server247.info:58080';
 	$pmWorkspace 	= 'workflow';
 
 	//set username using session
@@ -29,7 +29,9 @@ if (isset($_REQUEST['username']) and isset($_REQUEST['password'])) {
 		    'client_secret' => $clientSecret,
 		    'username'      => $username,
 		    'password'      => $password
-	   	);
+		);
+		
+		//print_r($postParams);die(); 
 	 
 	    $ch = curl_init("$pmServer/$pmWorkspace/oauth2/token");
 	    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
